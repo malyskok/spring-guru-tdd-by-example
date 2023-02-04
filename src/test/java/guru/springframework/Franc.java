@@ -6,6 +6,7 @@ public class Franc extends Money{
         this.amount = amount;
     }
 
+    @Override
     public Franc times(int multiplier) {
         return new Franc(this.amount * multiplier);
     }
